@@ -1,0 +1,83 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Checking Login functionalty with valid login credentials.",
+        "description": "",
+        "id": "checking-login-functionality-of-the-application.;checking-login-functionalty-with-valid-login-credentials.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8234898700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "login.user_is_on_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 90018400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters username in username textfield",
+            "match": {
+              "location": "login.user_enters_username_in_username_textfield()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 84140100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters password in password textfield",
+            "match": {
+              "location": "login.user_enters_password_in_password_textfield()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5194047900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on Login button",
+            "match": {
+              "location": "login.user_clicks_on_Login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8753100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user is on Home Page",
+            "match": {
+              "location": "login.user_is_on_Home_Page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Checking Login functionality of the application.",
+    "description": "",
+    "id": "checking-login-functionality-of-the-application.",
+    "keyword": "Feature",
+    "uri": "C:/Users/GunsanjamKaur/eclipse-workspace/com.bddFramework.hrm/src/test/java/FeatureFile/Login.feature",
+    "tags": []
+  }
+]
