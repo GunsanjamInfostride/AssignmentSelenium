@@ -1,6 +1,6 @@
 package StepDefinition;
 
-
+//import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
@@ -10,12 +10,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+//import cucumber.api.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class login 
 {
 	WebDriver driver;
-	
+
 	@Given("^user is on login page$")
 	public void user_is_on_Login_Page()
 	{
@@ -48,4 +49,27 @@ public class login
 	{
 		Assert.assertEquals("OrangeHRM", driver.getTitle());
 	}
+
+//	@When("^enters the username and enters the password$")
+//	public void enters_the_username_and_enters_the_password(io.cucumber.datatable.DataTable dataTable)
+//	{
+//		List<List<String>> data = dataTable.asLists(String.class);
+//		driver.findElement(By.id("txtUsername")).sendKeys(data.get(0).get(0));
+//		driver.findElement(By.id("txtPassword")).sendKeys(data.get(1).get(1));
+//	}
+	
+	@Then("enters {string} and enters the {string}")
+	public void enters_username_and_enters_the_password(String uname, String pass)
+	{
+		driver.findElement(By.id("txtUsername")).sendKeys(uname);
+		driver.findElement(By.id("txtPassword")).sendKeys(pass);
+	}
+	
+	@Then("click on login button")
+	public void click_on_login_button()
+	{
+		driver.findElement(By.id("btnLogin")).click();
+	}
+	
+	
 }

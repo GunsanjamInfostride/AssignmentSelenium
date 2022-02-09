@@ -1,21 +1,21 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 4,
+        "line": 33,
         "name": "Checking Login functionalty with valid login credentials.",
         "description": "",
-        "id": "checking-login-functionality-of-the-application.;checking-login-functionalty-with-valid-login-credentials.",
+        "id": "checking-login-functionality-of-the-application.;checking-login-functionalty-with-valid-login-credentials.;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 8234898700,
+              "duration": 8897055700,
               "status": "passed"
             },
-            "line": 6,
+            "line": 27,
             "name": "user is on login page",
             "match": {
               "location": "login.user_is_on_Login_Page()"
@@ -24,51 +24,103 @@
           },
           {
             "result": {
-              "duration": 90018400,
+              "duration": 204533500,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user enters username in username textfield",
+            "line": 28,
+            "name": "enters \"admin\" and enters the \"admin\"",
             "match": {
-              "location": "login.user_enters_username_in_username_textfield()"
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"admin\"",
+                  "offset": 30
+                }
+              ],
+              "location": "login.enters_username_and_enters_the_password(String,String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 84140100,
+              "duration": 1903550500,
               "status": "passed"
             },
-            "line": 8,
-            "name": "user enters password in password textfield",
+            "line": 29,
+            "name": "click on login button",
             "match": {
-              "location": "login.user_enters_password_in_password_textfield()"
+              "location": "login.click_on_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Checking Login functionalty with valid login credentials.",
+        "description": "",
+        "id": "checking-login-functionality-of-the-application.;checking-login-functionalty-with-valid-login-credentials.;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8574192800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user is on login page",
+            "match": {
+              "location": "login.user_is_on_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 175614400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "enters \"Admin\" and enters the \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"admin123\"",
+                  "offset": 30
+                }
+              ],
+              "location": "login.enters_username_and_enters_the_password(String,String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 5194047900,
+              "duration": 5556301100,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user clicks on Login button",
+            "line": 29,
+            "name": "click on login button",
             "match": {
-              "location": "login.user_clicks_on_Login_button()"
+              "location": "login.click_on_login_button()"
             },
             "keyword": "Then "
-          },
+          }
+        ],
+        "tags": [
           {
-            "result": {
-              "duration": 8753100,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user is on Home Page",
-            "match": {
-              "location": "login.user_is_on_Home_Page()"
-            },
-            "keyword": "Then "
+            "name": "@SmokeTest"
           }
         ]
       }
@@ -77,7 +129,7 @@
     "description": "",
     "id": "checking-login-functionality-of-the-application.",
     "keyword": "Feature",
-    "uri": "C:/Users/GunsanjamKaur/eclipse-workspace/com.bddFramework.hrm/src/test/java/FeatureFile/Login.feature",
+    "uri": "C:/Users/GunsanjamKaur/eclipse-workspace/com.DataTableinbdd.HRM/src/test/java/FeatureFile/Login.feature",
     "tags": []
   }
 ]
